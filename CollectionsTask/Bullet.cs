@@ -1,4 +1,4 @@
-﻿using CollectionsTask.Helpers;
+﻿using CollectionsTask.Helpers.Enums;
 using System;
 using System.Collections.Generic;
 using System.Linq;

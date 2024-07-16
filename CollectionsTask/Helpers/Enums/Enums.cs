@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CollectionsTask.Helpers
+namespace CollectionsTask.Helpers.Enums
 {
     public enum BulletType
     {

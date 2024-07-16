@@ -1,4 +1,4 @@
-﻿using CollectionsTask.Helpers;
+﻿using CollectionsTask.Helpers.Enums;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -23,11 +23,17 @@ namespace CollectionsTask
             bullets = new Stack<Bullet>();
         }
 
-        public void Fill()
+        public void Fill(List<Bullet> bulletCollection)
         {
-            for (int i = 0; i < MaxCapacity; i++)
-                bullets.Push(new Bullet(Type));
             bullets.Clear();
+
+            foreach (var bullet in bulletCollection)
+            {
+                if (bullets.Count < MaxCapacity)
+                {
+                    bullets.Push(bullet);
+                }
+            }
         }
 
         public void Fire()
